@@ -18,7 +18,7 @@ def line(current_line)
     
   end
   
-  return str
+  puts str
   
 end
 
@@ -26,7 +26,7 @@ end
 def take_a_number(current_line, name)
   
   current_line.push(name)
-  return "Welcome, " + name + ". You are number " + current_line.length + " in line."
+  puts "Welcome, " + name + ". You are number " + current_line.length + " in line."
   
 end
 
@@ -37,6 +37,6 @@ def now_serving(current_line)
   
   current_line.shift
   
-  return "Currently serving " + name + "."
+  puts "Currently serving " + name + "."
   
 end

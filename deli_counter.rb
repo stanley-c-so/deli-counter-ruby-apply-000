@@ -32,4 +32,11 @@ end
 
 
 def now_serving(current_line)
+  
+  name = current_line[0]
+  
+  current_line.shift
+  
+  return "Currently serving " + name + "."
+  
 end

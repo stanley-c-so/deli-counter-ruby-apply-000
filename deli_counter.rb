@@ -4,22 +4,23 @@ def line(current_line)
   
   str = "The line is currently"
   
-  if current_line.length == 0 then return str + " empty." end
+  if current_line.length == 0
+    puts str + " empty."
+  else
+    str += ": "
   
-  str += ": "
-  
-  current_line.each.with_index do |name, idx|
-    
-    if idx != current_line.length - 1
-      str += idx.to_s + ". " + name + " "
-    else
-      str += idx.to_s + ". " + name
+    current_line.each.with_index do |name, idx|
+      if idx != current_line.length - 1
+        str += idx.to_s + ". " + name + " "
+      else
+        str += idx.to_s + ". " + name
+      end
     end
     
+    puts str
+    
   end
-  
-  puts str
-  
+
 end
 
 

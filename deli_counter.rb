@@ -34,10 +34,12 @@ end
 
 def now_serving(current_line)
   
-  name = current_line[0]
-  
-  current_line.shift
-  
-  puts "Currently serving " + name + "."
+  if current_line.length == 0
+    puts "There is nobody waiting to be served!"
+  else
+    name = current_line[0]
+    current_line.shift
+    puts "Currently serving " + name + "."
+  end
   
 end

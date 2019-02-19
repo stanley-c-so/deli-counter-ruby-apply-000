@@ -5,10 +5,12 @@ def line(current_line)
   str = "The line is currently"
   
   if current_line.length == 0
+    
     puts str + " empty."
+    
   else
+    
     str += ": "
-  
     current_line.each.with_index do |name, idx|
       if idx != current_line.length - 1
         str += (idx + 1).to_s + ". " + name + " "

@@ -11,9 +11,9 @@ def line(current_line)
   
     current_line.each.with_index do |name, idx|
       if idx != current_line.length - 1
-        str += idx.to_s + ". " + name + " "
+        str += (idx + 1).to_s + ". " + name + " "
       else
-        str += idx.to_s + ". " + name
+        str += (idx + 1).to_s + ". " + name
       end
     end
     
